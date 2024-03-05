@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="../static/styles.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BurpEaze</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>BurpEaze</h1>
-        <p>Your journey to better health starts here</p>
-    </header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .custom-container-navbar {
+        background-color: #BFA32E;
+      }
+      .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0.75rem;
+      }
+      .custom-container-start {
+        background-color: #000;
+      }
+      h1 {
+        color: #f5f5f5; /* Change the color code to your desired color */
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: medium;
+      }
+      p {
+        color: #f5f5f5;
+        font-family: Arial, Helvetica, sans-serif; /* Change the font family to your desired font */
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+      }
+      /*.navbar-nav li a {
+       
+        list-style: none;
+        display: inline;
+        /*margin-right: 10px; /* Adjust the spacing as needed */ 
+    </style>
+  </head>
+  
+  <body style="background-color: #000;">
+        <nav class="navbar navbar-expand-md custom-container-navbar sticky-top">
+          <div class="container-fluid">
+                <ul class="navbar-nav flex-grow-1 justify-content-between py-2">
+                  <a href="/" class="d-flex align-items-center mb-2 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                    <button type="button" class="btn btn-dark fs-6" style="margin-left: 40px">Get Started</button>
+                  </a>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Our Motto</a></li>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Features</a></li>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Enterprise</a></li>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Support</a></li>
+                  <li class="nav-item"><a class="nav-link text-white m-2 fs-5" href="#">Pricing</a></li>
+                  </a></li>
+                </ul>
+              </div>
+        </nav>
 
-    <section class="features">
-        <div class="feature">
-            <h2>Our Philosophy</h2>
-            <p>Your fitness journey starts here</p>
-        </div>
-        <div class="feature">
-            <h2>Subscription</h2>
-            <p>Discover the power of subscription</p>
-        </div>
-        <div class="feature">
-            <h2>ADS</h2>
-            <p>Our comprehensive advertising services</p>
-        </div>
-    </section>
+          <div class="container-fluid custom-container-start">
+            <div class="row pe-lg-0 pt-lg-align-items-center">
+              <div class="col-lg-6 p-1 p-lg-5 pt-lg-1">
+                <img src="../static/burpv1-3.svg" class="mx-auto d-block" alt="Burpeaze Logo" width="450" height=auto >
+                <h1 class="display-3" >START YOUR HEALTH JOURNEY  TODAY!</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                  <button type="button" class="btn btn-secondary btn-lg px-4 me-md-2 fw-bold">Get Started</button>
+                </div>
+              </div>
+              <div class="col-lg-6 overflow-hidden shadow-lg">
+                  <img class="rounded-lg-2" src="../static/AI-Image.svg" alt="" width="720">
+              </div>
+            </div>
+          </div>
+      
+          <div class="container">
+            <footer class="d-flex flex-grow-1 justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-white">©  {{ year_copy }} BurpEaze </p>
+              <ul class="nav col-md-8 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Our Motto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+              </ul>
+            </footer>
+          </div>
 
-    <section class="contact">
-        <h2>Contact us</h2>
-        <p>Need more information?</p>
-        <p>Email: contact@burpeaze.com</p>
-    </section>
-</body>
-</html>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+   </script>
+  </body>
+</html> 
